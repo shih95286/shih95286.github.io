@@ -3,107 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yu-Chuan Shih 施昱全</title>
+  <title>我的自我介紹</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
+    /* Reset 一些預設樣式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    /* 導覽列 */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+    /* 首頁 Hero 區 */
     header {
+      height: 100vh;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      margin-bottom: 40px;
+      color: #fff;
+    }
+    header .hero-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 8px;
     }
     header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header h3 {
-      font-size: 1.5em;
-      color: #555;
-      margin-top: 5px;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    .section-title {
-      font-size: 1.8em;
+      font-size: 3em;
       margin-bottom: 10px;
     }
-    /* 自訂各區段標題顏色 */
-    #self-introduction .section-title {
-      color: #007BFF; /* 藍色 */
+    header p {
+      font-size: 1.2em;
     }
-    #education .section-title {
-      color: #007BFF; /* 藍色 */
+    /* 內容區 */
+    section {
+      padding: 60px 20px;
     }
-    #internship .section-title {
-      color: #007BFF; /* 藍色 */
+    .section-title {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
     }
-    #projects .section-title {
-      color: #007BFF; /* 藍色 */
+    .section-title::after {
+      content: "";
+      width: 80px;
+      height: 3px;
+      background: #007BFF;
+      display: block;
+      margin: 0 auto;
+      border-radius: 2px;
     }
-    .bilingual p {
-      margin: 5px 0;
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.8;
     }
-    .bilingual p:first-child {
-      font-weight: bold;
+    /* 自我介紹區背景色 */
+    #about {
+      background: #f9f9f9;
+    }
+    /* 學歷區 */
+    #education {
+      background: #fff;
+    }
+    /* 實習區 */
+    #internship {
+      background: #f9f9f9;
+    }
+    /* 專題區 */
+    #projects {
+      background: #fff;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #333;
+      color: #fff;
     }
   </style>
 </head>
 <body>
+  <!-- 導覽列 -->
+  <nav>
+    <ul>
+      <li><a href="#about">自我介紹</a></li>
+      <li><a href="#education">學歷</a></li>
+      <li><a href="#internship">實習</a></li>
+      <li><a href="#projects">專題</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero 首頁 -->
   <header>
-    <h1>Yu-Chuan Shih 施昱全</h1>
-    <h2>Student at National Yang Ming Chiao Tung University</h2>
+    <div class="hero-content">
+      <h1>你的姓名</h1>
+      <p>歡迎來到我的個人網站</p>
+    </div>
   </header>
 
-  <main>
-    <!-- 自我介紹區段 -->
-    <section id="self-introduction">
-      <h2 class="section-title">Biography</h2>
-      <div class="bilingual">
-        <p>I am a graduate student at National Yang Ming Chiao Tung University (NYCU), studient in quantitative finance, statistic and data science. My research focus on application of Large Language Model in finance, statistic or econometric model in evaluating Value-at-Risk (VaR)</p>
-      </div>
-    </section>
+  <!-- 自我介紹 -->
+  <section id="about">
+    <h2 class="section-title">自我介紹</h2>
+    <div class="content">
+      <p>大家好，我是 [你的姓名]，熱愛學習新知並勇於接受挑戰。我擁有豐富的專業背景和創意思維，喜歡將理論與實踐結合，致力於在技術與藝術之間找到平衡。</p>
+    </div>
+  </section>
 
-    <!-- 學歷區段 -->
-    <section id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="bilingual">
-        <h2>National Yang Ming Chiao Tung University</h2>
-        <ul>
-           <li>::marker Information Management and Finance</li>
-        </ul>
-        <h2>National Tsing Hua University</h2>
-        <ul>
-           <li>::marker Double major in Economics and Quantitative Finance</li>
-        </ul>
-      </div>
-    </section>
+  <!-- 學歷 -->
+  <section id="education">
+    <h2 class="section-title">學歷</h2>
+    <div class="content">
+      <p>我畢業於 [學校名稱]，主修 [科系]。在學期間，我不僅打下堅實的理論基礎，更積極參與各項專題與實踐，累積了豐富的經驗。</p>
+    </div>
+  </section>
 
-    <!-- 實習區段 -->
-    <section id="internship">
-      <h2 class="section-title">Internship</h2>
-      <div class="bilingual">
-        <h2>Yaunta Securities</h2>
-        <ul>
-           <li>::marker Quantitative Trading Department</li>
-        </ul>
-        <h2>Taiwan Economic Journal</h2>
-        <ul>
-           <li>::marker Data Science</li>
-        </ul>
-      </div>
-    </section>
+  <!-- 實習 -->
+  <section id="internship">
+    <h2 class="section-title">實習</h2>
+    <div class="content">
+      <p>在 [公司名稱] 實習期間，我參與了多個專案，負責數據分析與軟體開發，實際體驗了團隊合作與專業運作的過程，進一步提升了我的技術能力與問題解決技巧。</p>
+    </div>
+  </section>
 
-    <!-- 專題區段 -->
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="bilingual">
-        <p>[請在此填入你的中文專題經驗，詳細說明參與的專題內容、所使用的技術以及達成的成果。]</p>
-        <p>[Please insert your projects experience here in English, detailing the project content, technologies used, and outcomes achieved.]</p>
-      </div>
-    </section>
-  </main>
+  <!-- 專題 -->
+  <section id="projects">
+    <h2 class="section-title">專題</h2>
+    <div class="content">
+      <p>我曾參與的專題包括基於機器學習的股價預測模型及區塊鏈技術在金融安全中的應用。這些專題讓我深入了解前沿技術的實際應用，並提升了跨領域整合能力。</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 你的姓名. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>

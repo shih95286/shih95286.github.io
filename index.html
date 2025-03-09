@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的自我介紹</title>
+  <title>James - Resume</title>
   <style>
-    /* Reset 一些預設樣式 */
+    /* Reset default styles */
     * {
       margin: 0;
       padding: 0;
@@ -19,7 +19,7 @@
       line-height: 1.6;
       color: #333;
     }
-    /* 導覽列 */
+    /* Navigation Bar */
     nav {
       position: fixed;
       top: 0;
@@ -45,7 +45,7 @@
     nav ul li a:hover {
       color: #FFD700;
     }
-    /* 首頁 Hero 區 */
+    /* Hero Section */
     header {
       height: 100vh;
       background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
@@ -67,7 +67,7 @@
     header p {
       font-size: 1.2em;
     }
-    /* 內容區 */
+    /* Section Styles */
     section {
       padding: 60px 20px;
     }
@@ -93,23 +93,13 @@
       font-size: 1.1em;
       line-height: 1.8;
     }
-    /* 自我介紹區背景色 */
-    #about {
-      background: #f9f9f9;
-    }
-    /* 學歷區 */
-    #education {
-      background: #fff;
-    }
-    /* 實習區 */
-    #internship {
-      background: #f9f9f9;
-    }
-    /* 專題區 */
-    #projects {
-      background: #fff;
-    }
-    /* Footer */
+    /* Different background colors for sections */
+    #about { background: #f9f9f9; }
+    #education { background: #fff; }
+    #internship { background: #f9f9f9; }
+    #projects { background: #fff; }
+    #contact { background: #f9f9f9; }
+    /* Footer Styles */
     footer {
       text-align: center;
       padding: 20px 0;
@@ -119,59 +109,90 @@
   </style>
 </head>
 <body>
-  <!-- 導覽列 -->
+  <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#about">自我介紹</a></li>
-      <li><a href="#education">學歷</a></li>
-      <li><a href="#internship">實習</a></li>
-      <li><a href="#projects">專題</a></li>
+      <li><a href="#about">Biography</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#internship">Work Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero 首頁 -->
+  <!-- Hero Section -->
   <header>
     <div class="hero-content">
-      <h1>你的姓名</h1>
-      <p>歡迎來到我的個人網站</p>
+      <h1>Yu-Chuan Shih / 施昱全</h1>
+      <p>Student at National Yang Ming Chiao Tung University</p>
     </div>
   </header>
 
-  <!-- 自我介紹 -->
+  <!-- About Section -->
   <section id="about">
-    <h2 class="section-title">自我介紹</h2>
+    <h2 class="section-title">Biography</h2>
     <div class="content">
-      <p>大家好，我是 [你的姓名]，熱愛學習新知並勇於接受挑戰。我擁有豐富的專業背景和創意思維，喜歡將理論與實踐結合，致力於在技術與藝術之間找到平衡。</p>
+      <p>I am a graduate student at National Yang Ming Chiao Tung University (NYCU), studient in quantitative finance, statistic and data science. My research focus on application of Large Language Model in finance, statistic or econometric model in evaluating Value-at-Risk (VaR)</p>
     </div>
   </section>
 
-  <!-- 學歷 -->
+  <!-- Education Section -->
   <section id="education">
-    <h2 class="section-title">學歷</h2>
+    <h2 class="section-title">Education</h2>
     <div class="content">
-      <p>我畢業於 [學校名稱]，主修 [科系]。在學期間，我不僅打下堅實的理論基礎，更積極參與各項專題與實踐，累積了豐富的經驗。</p>
+      <p>
+      <strong>National Yang Ming Chiao Tung University</strong> Sep 2023 to date<br>
+      &bull; Information Management and Finance Department
+      </p>
+      <!-- You can add more entries like the example above -->
+      <p>
+      <strong>National Tsing Hua University</strong> Sep 2018 to Jan 2023<br>
+      &bull; Double major in Economics and Quantitative Finance
     </div>
   </section>
 
-  <!-- 實習 -->
+  <!-- Internship Section -->
   <section id="internship">
-    <h2 class="section-title">實習</h2>
+    <h2 class="section-title">Internship</h2>
     <div class="content">
-      <p>在 [公司名稱] 實習期間，我參與了多個專案，負責數據分析與軟體開發，實際體驗了團隊合作與專業運作的過程，進一步提升了我的技術能力與問題解決技巧。</p>
+      <p>
+      <strong>Yuanta Securities</strong> Sep 2024 to Jan 2025<br>
+      &bull; Intern at Quantitative Trading Department
+      </p>
+      
+      <p>
+      <strong>Taiwan Economics Journal</strong> Mar 2025 to date<br>
+      &bull; Intern for Data Science
+      </p>
+      
     </div>
   </section>
 
-  <!-- 專題 -->
+  <!-- Projects Section -->
   <section id="projects">
-    <h2 class="section-title">專題</h2>
+    <h2 class="section-title">Projects</h2>
     <div class="content">
-      <p>我曾參與的專題包括基於機器學習的股價預測模型及區塊鏈技術在金融安全中的應用。這些專題讓我深入了解前沿技術的實際應用，並提升了跨領域整合能力。</p>
+      <p>I have been involved in various projects, such as a machine learning-based stock prediction model and applying blockchain technology for financial security. These projects have allowed me to gain hands-on experience and develop cross-disciplinary skills.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="content">
+      <p>If you would like to get in touch, feel free to contact me via:</p>
+      <ul>
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your Profile</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></li>
+        <!-- Add more contact information as needed -->
+      </ul>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 你的姓名. All Rights Reserved.</p>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
